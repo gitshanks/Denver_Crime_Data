@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+
+  <!--Page Title-->
+  <title>Denver Crime Data</title>
+
+  <!--Meta Keywords and Description-->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
+
+  <!-- Main CSS Files -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Namari Color CSS -->
+  <link rel="stylesheet" href="css/namari-color.css">
+
+  <!--Icon Fonts - Font Awesome Icons-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Animate CSS-->
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+  <!--Google Webfonts-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--End of Preloader-->
+
+  <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+    </div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+  </div>
+
+  <div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+
+
+      <!--Banner Content-->
+      <div id="banner-content" class="row clearfix">
+
+        <div class="col-38">
+
+          <div class="section-heading">
+            <h1 style="color:white">DENVER CRIME DATA</h1>
+            <h2 style="color:white">Diving down into crimes happening in the City and County of Denver, how it is
+              divided by neighborhoods, time of the year and number of the precincts in that area.
+            </h2>
+          </div>
+
+
+
+        </div>
+
+      </div>
+      <!--End of Row-->
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+      <!--Content Section-->
+      <div id="services" class="scrollto clearfix">
+
+        <div class="row no-padding-bottom clearfix">
+
+
+          <!--Content of the Right Side-->
+          <div class="col-3">
+            <div class="section-heading">
+              <h3></h3>
+              <h2 class="section-title">The Broad View</h2>
+              <p class="section-subtitle">How different crimes stack up in 2019</p>
+            </div>
+            <p>Looking at the broad picture of how diffrent crimes stack up over the year by plotting an area graph
+              using sequential color ordering for number of crimes, <b>traffic accident was the
+                most
+                reported crime</b> type over the year with minor monthly variations. This is followed by <b>larceny</b>,
+              <b>public-disorder</b> and <b>auto theft</b> as the top crimes. There is a consistent trend of <b>number
+                of crimes dipping
+                down during winters to spring </b> with a major dip somewhere in January. Whereas the <b>number of
+                crimes
+                significantly increases when we move to warmer months</b> which is expected. Another interesting finding
+              is that the <b>number of reported traffic accidents increased significantly in the winter months</b>,
+              starting
+              from mid-September all the way to mid-January which is understable attributing to snowy weather.
+            </p>
+          </div>
+          <!--End Content Right Side-->
+
+          <div class="col-2-3">
+            <img src="images/com.png" alt="viz1.png" />
+          </div>
+
+        </div>
+        <div class="row no-padding-bottom clearfix">
+
+
+          <!--Content of the Right Side-->
+          <div class="col-2-3">
+            <img src="images/nh.png" alt="viz2.png" />
+          </div>
+          <!--End Content Right Side-->
+
+          <div class="col-3">
+            <div class="section-heading">
+              <h3></h3>
+              <h2 class="section-title">Crime Across Neighborhoods</h2>
+              <p class="section-subtitle">Diving in: Most notorious neighborhoods </p>
+            </div>
+            <p>If we plot the reported incidents of crimes using the geographical coordinates and use sequential color
+              encoding along with size to show number of crimes based on different neighborhoods, we end up with a map
+              like this. <b>As the color goes from lighter to darker and the size of the circle becomes bigger</b>, it
+              corresponds to increasing number of reported crimes. A quick glance at the viz show that <b>five-points is
+                the most notorious neighborhood of the city</b>, followed by stapleton and capitol hill. This can be
+              attributed to a large number of factors like population, poverty and homelessness. A deeper dive into the
+              neighborhood of five-points and seeing factors like <b>most popular crimes, number of precincts, division
+                of
+                crimes in a precinct will give us a better idea of the crime landscape of the city</b>.
+            </p>
+          </div>
+
+
+        </div>
+        <div class="row no-padding-bottom clearfix">
+
+
+          <!--Content of the Right Side-->
+          <div class="col-3">
+            <div class="section-heading">
+              <h3></h3>
+              <h2 class="section-title">Crime Landscape</h2>
+              <p class="section-subtitle">An overview of crime landscape of the city</p>
+            </div>
+            <p>If we take a deeper look at how crimes are distributed throughout the city by <b>color coding the
+                different
+                types of crime</b> and <b>using circle size an indicator of number of crimes of a specific category</b>,
+              we end with
+              a
+              map like this. Another detail worth noticing in this visualization is that the <b>tool tip shows us the
+                number of precincts</b> in a particular area which <b>contextually informs a lot about factors that
+                affect the
+                crime landscape</b>, as we will discuss in the later visualizations. By observing the visualization, we
+              find
+              that, when zoomed into <b>five points</b>, the most notorious neighborhood according to our previous
+              visualization, <b>traffic accident is the most reported crime</b>, followed by drug alcohol. If we wanna
+              see it
+              in a better way, let's zoom in a bit further.
+            </p>
+          </div>
+          <!--End Content Right Side-->
+
+          <div class="col-2-3">
+            <img src="images/nhtypepfcrimes.png" alt="viz3.png" />
+          </div>
+
+        </div>
+
+        <div class="row no-padding-bottom clearfix">
+
+
+          <!--Content of the Right Side-->
+          <div class="col-2-3">
+            <img src="images/mostoccuring.png" alt="viz4.png" />
+          </div>
+          <!--End Content Right Side-->
+
+          <div class="col-3">
+            <div class="section-heading">
+              <h3></h3>
+              <h2 class="section-title">Types of Crime</h2>
+              <p class="section-subtitle">How diffrent crimes stack up in five points</p>
+            </div>
+            <p>If we plot the number of diffrent crimes happening at five points, and plot them using number of crimes
+              per category as the size of the circle. We arrive at the conclusion that the top five crimes happening at
+              five points are <b>traffic accident, drug-alcohol, public-disorder, larceny and motor-vehicle theft</b>.
+              As observed by the previous visualization, five points have 4 precincts. As we know traffic accident is
+              the most reported accident is the most reported crime at five points, let's see how it is distributed
+              among the precincts, over the year 2019.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="row no-padding-bottom clearfix">
+
+
+          <!--Content of the Right Side-->
+          <div class="col-3">
+            <div class="section-heading">
+              <h3></h3>
+              <h2 class="section-title">Traffic Accidents Across Precincts</h2>
+              <p class="section-subtitle">How traffic accidents are divided between precincts over the year </p>
+            </div>
+
+            <p>Diving even deeper into studying the crime landscape of five points, <b>we plot the most reported crime
+                i.e.
+                traffic accident</b> in the neighborhood, <b>divided among the four precincts</b> that make the
+              neighborhood,
+              <b>throughout the year</b>. This gives us several interesting insights, like <b>September has the most
+                number
+                of
+                reported traffic accidents</b> and the <b>precincts 612, 621 and 211</b> contribute towards <b>majority
+                of
+                reports</b>. But
+              get a better idea of how different crimes are reported at different precincts we might have to take a step
+              back and look at the bigger picture including all crimes and not just traffic accidents.
+            </p>
+          </div>
+          <!--End Content Right Side-->
+
+          <div class="col-2-3">
+            <img src="images/presinct.png" alt="viz7.png" />
+          </div>
+
+        </div>
+
+        <div class="row no-padding-bottom clearfix">
+
+
+          <!--Content of the Right Side-->
+          <div class="col-2-3">
+            <img src="images/presinct1.png" alt="viz8.png" />
+          </div>
+          <!--End Content Right Side-->
+
+          <div class="col-3">
+            <div class="section-heading">
+              <h3></h3>
+              <h2 class="section-title">Crimes Across Precincts</h2>
+              <p class="section-subtitle">Distribution of crimes across precincts over the year</p>
+            </div>
+            <p>Although traffic accidents, the most reported crime in the neighborhood of five points is a good measure
+              to study diffrent precincts, a bigger picture, <b>combining all the crimes</b> that happen in five points
+              gives a
+              <b>clear understanding of how precincts handle the crimes</b>. The plot of all the crimes over the year
+              <b>confirms certain previously observed trends</b>, such as <b>peaking of crimes in warmer months</b> and
+              <b>dipping down of crimes in colder months</b>. This look at the bigger picture gives us some <b>pretty
+                interesting new insights</b>, which will be really <b>instrumental in understanding how precincts handle
+                crimes.</b>
+              Precincts <b>211, 621 and 612</b> have the <b>most number of reported crimes</b> in the neighborhood of
+              five points. This can
+              be <b>attributed to a variety of factors</b> such as <b>population density, shortage of officials, poverty
+                etc.</b> An
+              imortant way <b>how this insight can be used</b> is that the <b>authorities responsible can mend the
+                disparity
+                between reported crimes</b> in the neighborhood by <b>focusing more on that specific precinct</b> and
+              the <b>effects</b> of
+              the solution can <b>trickle down, improving the entire crime landscape of the city</b>.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+  </div>
+  <div class="row no-padding-bottom clearfix">
+
+
+    <!--Content of the Right Side-->
+    <div class="col-3">
+      <div class="section-heading">
+        <h2 class="section-title">Precinct 211</h2>
+        <p class="section-subtitle">How crime varies in the most notorious precinct of the city</p>
+      </div>
+      <p>We further take a closer look of how crime varies in the most notorious precinct of the city, precinct 211. For
+        this visualization, <b>we take the five most reported crimes</b> from our Types of Crime visualization namely
+        traffic
+        accident, drug-alcohol, public-disorder, larceny and motor-vehicle theft. We then plot these against the
+        reported date to get an idea how they vary across the year. Few interesting insights to deduce are, exactly as
+        expected both <b>traffic accident and motor-vehicle theft peak in mid-August and usually stay high in the warmer
+          months and dip in the colder months.</b> Another really important insight is that the <b>public disorder and
+          larceny
+          also have comparable number of reports as traffic-accident</b> and that's something the concerned city
+        authorities
+        can work on curbing at the root level. <b>Drug-alcohol related reports see an up-down throughout the year</b>
+        and
+        that's something worth nothing and needs attention throughout the year.
+
+      </p>
+      <br><br> <br><br>
+    </div>
+
+    <!--End Content Right Side-->
+
+    <div class="col-2-3">
+      <img src="images/presinct211.png" alt="viz9.png" />
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+  </div>
+
+  </section>
+
+  </main>
+  <!--Footer-->
+  <footer id="landing-footer" class="clearfix">
+    <div class="row clearfix">
+
+      <p id="copyright" class="col-2">Made with <i class="fa fa-heart pulse"></i> by <a
+          href="https://www.behance.net/justabeardo" target="_blank">Nishank Sharma</a></p>
+
+      <!--Social Icons in Footer-->
+      <ul class="col-2 social-icons">
+        <li>
+          <a target="_blank" title="Github" href="https://github.com/gitshanks">
+            <i class="fa fa-github fa-1x"></i><span>Github</span>
+          </a>
+        </li>
+        <li>
+
+        </li>
+        <a target="_blank" title="Behance" href="https://www.behance.net/justabeardo">
+          <i class="fa fa-behance fa-1x"></i><span>Behance</span>
+        </a>
+        <li>
+          <a target="_blank" title="Medium" href="hhttps://medium.com/themlblog">
+            <i class="fa fa-medium fa-1x"></i><span>Medium</span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/justabeardo/">
+            <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
+          </a>
+        </li>
+      </ul>
+      <!--End of Social Icons in Footer-->
+    </div>
+  </footer>
+  <!--End of Footer-->
+
+  </div>
+
+
+  <!-- Include JavaScript resources -->
+  <script src="js/jquery.1.8.3.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/featherlight.min.js"></script>
+  <script src="js/featherlight.gallery.min.js"></script>
+  <script src="js/jquery.enllax.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.stickyNavbar.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/images-loaded.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/site.js"></script>
+
+
+</body>
+
+</html>
